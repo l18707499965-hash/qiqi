@@ -25,9 +25,8 @@ export const SITE = {
   statsId: '8fc129760ce080943794d1b00cf9422a',
   // 站点对外访问域名（运行时由环境变量注入，禁止硬编码）
   baseUrl: process.env.COZE_PROJECT_DOMAIN_DEFAULT ?? 'https://localhost:5000',
-  // 应用图标/Logo（使用用户提供的 App 图标地址）
-  iconUrl:
-    'https://coze-coding-project.tos.coze.site/create_attachment/2026-09-29/643694357650231_9df08d35da1567a67c375b08eeb3b3ab_image.png',
+  // 应用图标/Logo（本地静态资源，避免外链失效）
+  iconUrl: '/qiqi-icon.jpeg',
   version: 'v3.2.0',
   email: 'support@qiqi-video.example.com',
 } as const;
