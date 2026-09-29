@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
     default: `${SITE.name} - ${SITE.slogan} | 安卓免费下载`,
-    template: `%s | ${SITE.name}`,
+    template: `${SITE.name} | %s`,
   },
   description: SITE.description,
   keywords: [...SITE.keywords],
